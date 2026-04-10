@@ -34,11 +34,10 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-tag fade-up">Mixed Reality · Concert · Accessibility</div>
     <h1 class="fade-up delay-1"><em>Convio</em></h1>
     <p class="hero-subtitle fade-up delay-2">A Mixed Reality Concert Experience</p>
     <p class="hero-desc fade-up delay-3">
-      A mobile AR platform that lets people who <strong>cannot attend live events</strong> feel the shared energy of a concert — together, even while physically apart.
+      that lets you enjoy <strong>Live Concert</strong> anywhere with anyone.
     </p>
     <div class="hero-actions fade-up delay-4">
       <a href="#video" class="btn-primary">Watch the Demo</a>
@@ -137,22 +136,16 @@
       <h2 class="section-title">See it <em>in action</em></h2>
       <p class="section-lead">Watch the demo video of Convio.</p>
       <p class="section-lead">Understand more about this project.</p>
-
       <div class="video-wrap">
-        <video id="demoVideo" class="demo-video" preload="auto" controls playsinline>
-          <source src="Video/Capstone_DemoVideo_0326_V01.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <div class="video-overlay" id="videoOverlay">
-          <div class="video-placeholder">
-            <div class="play-btn" id="playBtn">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M8 5.14v14l11-7-11-7z" fill="white"/>
-              </svg>
-            </div>
-          </div>
-        </div>
+        <iframe
+          id="demoVideo"
+          class="demo-video"
+          src="https://drive.google.com/file/d/1QLjPideL3HCtrONHXtPlxZm4GQDGVhSv/preview"
+          title="Convio Demo Video"
+          allow="autoplay"
+          allowfullscreen
+          style="aspect-ratio: 16 / 9; border: 0;"
+        ></iframe>
       </div>
     </div>
   </section>
@@ -167,24 +160,20 @@
       <p class="section-lead">From concept art to working Unity builds, this is the visual evolution of Convio across research, design, and prototyping phases.</p>
 
       <div class="gallery-grid">
-        <div class="gallery-item span-col gallery-1">
-          <div class="gallery-bg">🎵</div>
+        <div class="gallery-item span-col gallery-1" data-images="img/now_Blanket.jpg">
+          <img src="img/now_Blanket.jpg" alt="AR Concert Scene — Blanket and Stage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
           <span class="gallery-label">AR Concert Scene — Blanket and Stage</span>
         </div>
-        <div class="gallery-item gallery-2">
-          <div class="gallery-bg">🎭</div>
+        <div class="gallery-item gallery-2" data-images="img/now_avatar.jpg">
+          <img src="img/now_avatar.jpg" alt="AR Concert Scene — Blanket and Stage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
           <span class="gallery-label">Avatar - Meta</span>
         </div>
-        <div class="gallery-item gallery-3">
-          <div class="gallery-bg">🛋️</div>
+        <div class="gallery-item gallery-3" data-images="img/now_UI.jpg">
+          <img src="img/now_UI.jpg" alt="UI" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
           <span class="gallery-label">UI</span>
         </div>
-        <div class="gallery-item span-row gallery-4">
-          <div class="gallery-bg">🌐</div>
-          <span class="gallery-label">User Flow Diagram</span>
-        </div>
-        <div class="gallery-item gallery-5">
-          <div class="gallery-bg">🎆</div>
+        <div class="gallery-item span-row gallery-4" data-images="img/now_showVFX.jpg">
+          <img src="img/now_showVFX.jpg" alt="VFX" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
           <span class="gallery-label">VFX</span>
         </div>
       </div>

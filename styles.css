@@ -492,6 +492,14 @@ section {
   opacity: 0.15;
   pointer-events: none;
 }
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8,8,16,0.7) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
 .gallery-label {
   position: relative;
   z-index: 1;
@@ -518,6 +526,96 @@ section {
   font-size: 13px;
   color: var(--text3);
   text-align: center;
+}
+.gallery-item[data-images] { cursor: pointer; }
+
+/* ── Lightbox ─────────────────────────────── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.lightbox.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+.lightbox-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16,1,0.3,1);
+}
+.lightbox.is-open .lightbox-inner {
+  transform: scale(1);
+}
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+}
+.lightbox-caption {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text2);
+}
+.lightbox-btn {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(8,8,16,0.85);
+  border: 1px solid var(--border2);
+  color: var(--text);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background 0.2s;
+  z-index: 1001;
+  line-height: 1;
+}
+.lightbox-btn:hover {
+  border-color: var(--accent);
+  background: rgba(124,92,252,0.18);
+  color: var(--accent2);
+}
+.lightbox-close { top: 20px; right: 20px; font-size: 18px; }
+.lightbox-prev  { top: 50%; left: 20px;  transform: translateY(-50%); }
+.lightbox-next  { top: 50%; right: 20px; transform: translateY(-50%); }
+.lightbox-btn.lb-hidden { display: none; }
+.lightbox-dots {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.lightbox-dots.lb-hidden { display: none; }
+.lightbox-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text3);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.lightbox-dot.active {
+  background: var(--accent);
+  transform: scale(1.4);
 }
 
 /* PROCESS TIMELINE */
