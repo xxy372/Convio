@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convio — A Mixed Reality Concert Experience</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+  <div class="ambient ambient-3"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <span class="nav-logo-dot"></span>
+      Convio
+    </a>
+    <ul class="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#credits">Credits</a></li>
+    </ul>
+    <a href="https://arconcertblog.figma.site" target="_blank" class="nav-cta">View Journal →</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag fade-up">Mixed Reality · Concert · Accessibility</div>
+    <h1 class="fade-up delay-1"><em>Convio</em></h1>
+    <p class="hero-subtitle fade-up delay-2">A Mixed Reality Concert Experience</p>
+    <p class="hero-desc fade-up delay-3">
+      A mobile AR platform that lets people who <strong>cannot attend live events</strong> feel the shared energy of a concert — together, even while physically apart.
+    </p>
+    <div class="hero-actions fade-up delay-4">
+      <a href="#video" class="btn-primary">Watch the Demo</a>
+      <a href="#overview" class="btn-ghost">Explore the Project</a>
+    </div>
+    <div class="hero-scroll fade-up delay-5">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- OVERVIEW -->
+  <section id="overview" class="section-pad">
+    <div class="container">
+      <p class="section-tag">The Problem</p>
+      <h2 class="section-title">Being there,<br><em>when you can't be there</em></h2>
+      <p class="section-lead">Concerts are becoming harder to access: cost, travel, time, distance, and accessibility barriers. For many people, watching from home is the only realistic option, but today's livestreams rarely feel shared, immersive, or alive.</p>
+
+      <div class="overview-grid">
+        <div class="overview-text">
+          <p>Existing livestream platforms make concerts viewable, but they still feel <strong>passive and distant</strong>. They do not recreate the energy of being in the same space, reacting in the moment, or experiencing a performance together with friends.</p>
+          <p>Convio is a <strong>Mixed Reality concert experience</strong> that explores a more social and immersive alternative. Users can choose a show, place a virtual blanket and stage in their own space, and enjoy the concert from home in a way that feels more present and interactive.</p>
+          <p>The experience can be enjoyed solo or online with friends. In shared mode, users can see one another as avatars, hear each other through live voice chat, and interact with the concert through hand-drawn visual effects and other immersive elements.</p>
+          <p>This version is a <strong>headset-based proof of concept</strong>. Our long-term vision is to bring the experience to <strong>XR glasses</strong>, making it lighter, more comfortable, and more natural for everyday concert experiences.</p>
+        </div>
+        <div>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <div class="stat-num">4.7</div>
+              <div class="stat-label">/ 5 — felt like a shared experience with real people</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">4.6</div>
+              <div class="stat-label">/ 5 — voices and avatars strengthened togetherness</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">5</div>
+              <div class="stat-label">/ 5 — participants wanted to experience live concerts in MR</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">4.8</div>
+              <div class="stat-label">/ 5 — found the experience easy to join and start</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCE / FEATURES -->
+  <section id="experience" class="section-pad features-section">
+    <div class="container">
+      <p class="section-tag">The Experience</p>
+      <h2 class="section-title">How <em>Convio</em> works</h2>
+      <p class="section-lead">A shared Mixed Reality concert experience that brings live-feeling performances into your own space, whether you want to enjoy them alone or with friends.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-title">Choose a Show</div>
+          <div class="feature-desc">Users begin by selecting the performance they want to experience, making the concert feel intentional and personal from the very start.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">Place the Stage in Your Space</div>
+          <div class="feature-desc">A virtual blanket and stage can be placed wherever the user chooses, turning an everyday room into a concert setting that feels immersive, flexible, and close.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">Start the Concert</div>
+          <div class="feature-desc">Once the blanket is placed, the performance begins. This creates a simple and intuitive flow, helping users move naturally from setup into the experience.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">Share the Experience with Friends</div>
+          <div class="feature-desc">Users can join online with friends to watch together in real time, making the experience feel more social, connected, and alive than a traditional livestream.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">See and Talk to Each Other</div>
+          <div class="feature-desc">In online mode, users can see one another as Meta default avatars and communicate through live voice chat, creating a sense of presence and shared attendance.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">Interact Through Visual Effects</div>
+          <div class="feature-desc">Users can draw visual effects with their hands during the performance, adding a playful and expressive layer of interaction. More concert-based VFX are planned as the project develops.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- VIDEO -->
+  <section id="video" class="section-pad">
+    <div class="container">
+      <p class="section-tag">Demo Video</p>
+      <h2 class="section-title">See it <em>in action</em></h2>
+      <p class="section-lead">Watch the demo video of Convio.</p>
+      <p class="section-lead">Understand more about this project.</p>
+
+      <div class="video-wrap">
+        <video id="demoVideo" class="demo-video" preload="auto" controls playsinline>
+          <source src="Video/Capstone_DemoVideo_0326_V01.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="video-overlay" id="videoOverlay">
+          <div class="video-placeholder">
+            <div class="play-btn" id="playBtn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M8 5.14v14l11-7-11-7z" fill="white"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- VISUALS -->
+  <section id="visuals" class="section-pad visuals-section">
+    <div class="container">
+      <p class="section-tag">Project Visuals</p>
+      <h2 class="section-title">Concept &amp; <em>Prototype</em></h2>
+      <p class="section-lead">From concept art to working Unity builds, this is the visual evolution of Convio across research, design, and prototyping phases.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item span-col gallery-1">
+          <div class="gallery-bg">🎵</div>
+          <span class="gallery-label">AR Concert Scene — Blanket and Stage</span>
+        </div>
+        <div class="gallery-item gallery-2">
+          <div class="gallery-bg">🎭</div>
+          <span class="gallery-label">Avatar - Meta</span>
+        </div>
+        <div class="gallery-item gallery-3">
+          <div class="gallery-bg">🛋️</div>
+          <span class="gallery-label">UI</span>
+        </div>
+        <div class="gallery-item span-row gallery-4">
+          <div class="gallery-bg">🌐</div>
+          <span class="gallery-label">User Flow Diagram</span>
+        </div>
+        <div class="gallery-item gallery-5">
+          <div class="gallery-bg">🎆</div>
+          <span class="gallery-label">VFX</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROCESS / TIMELINE -->
+  <section id="process" class="section-pad process-section">
+    <div class="container">
+      <p class="section-tag">Research &amp; Process</p>
+      <h2 class="section-title">From <em>idea</em> to prototype</h2>
+      <p class="section-lead">A semester of discovery, pivoting, and building — guided by user research and a commitment to designing for those who need it most.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Apr 2025</div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Funding</div>
+            <div class="timeline-title">Frost Research Grant</div>
+            <div class="timeline-desc">Secured initial funding and established the original vision of a shared AR concert platform for geographically dispersed friends.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Jul–Aug 2025</div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Discovery</div>
+            <div class="timeline-title">Concept Formation &amp; Proposals</div>
+            <div class="timeline-desc">Defined research questions, set goals, met with advisors Dr. Millet, Dr. Chuan, and Prof. Martens. Locked mobile + AR as core platform. Submitted three iterated proposals.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Sep–Oct 2025</div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Research &amp; Pivot</div>
+            <div class="timeline-title">Focus Group to Audience Pivot</div>
+            <div class="timeline-desc">Ran a 90-minute focus group with 6 participants. The "Social Highs and Lows" exercise revealed that AR concerts are most valuable for those who cannot attend in person — reshaping our entire target audience.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Oct–Nov 2025</div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Design &amp; Build</div>
+            <div class="timeline-title">Prototype Development in Unity</div>
+            <div class="timeline-desc">Built avatar creation, blanket placement, Photon Fusion multiplayer networking, synchronized music playback, spatialized voice chat, and a tap-to-fireworks collective mechanic.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Nov 2025</div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Testing</div>
+            <div class="timeline-title">User Testing — 8 Participants</div>
+            <div class="timeline-desc">4 sessions of 2 participants each at University of Miami. Validated core mechanics. Added self-view window and AR coordinate calibration phase based on feedback.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-cta-wrap">
+        <a href="https://arconcertblog.figma.site" target="_blank" class="btn-ghost">Explore the full process journal →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- JOURNAL LINK -->
+  <section id="journal" class="section-pad">
+    <div class="container">
+      <p class="section-tag">Documentation</p>
+      <h2 class="section-title">Go deeper into <em>the process</em></h2>
+      <p class="section-lead">The public documentation journal captures the full arc — every research sprint, design decision, technical challenge, and iteration that led to this prototype.</p>
+
+      <a href="https://arconcertblog.figma.site" target="_blank" class="journal-card">
+        <div>
+          <div class="journal-eyebrow">Public Journal</div>
+          <div class="journal-title">AR Concert Process Journal</div>
+          <div class="journal-desc">Research, wireframes, focus group outputs, prototype evolution, testing findings, and reflections — all documented and publicly available at convio.com</div>
+        </div>
+        <div class="journal-arrow">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10h12M10 4l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CREDITS -->
+  <section id="credits" class="section-pad credits-section">
+    <div class="container">
+      <p class="section-tag">Credits &amp; Acknowledgements</p>
+      <h2 class="section-title">The people behind <em>Convio</em></h2>
+      <p class="section-lead">A capstone project from the University of Miami, built with research rigor, creative ambition, and a lot of Unity debugging.</p>
+
+      <div class="credits-grid">
+        <div class="credit-card">
+          <div class="credit-role">Project Lead</div>
+          <div class="credit-name">Xinyu Jane Yao</div>
+          <div class="credit-detail">Concept, Unity XR development, 3D Environment, VFX, Research methodology, UX design, and project direction.</div>
+        </div>
+        <div class="credit-card">
+          <div class="credit-role">Collaborator</div>
+          <div class="credit-name">Camilo</div>
+          <div class="credit-detail">Concept, Research grant, UI design, sound design</div>
+        </div>
+        <div class="credit-card">
+          <div class="credit-role">Advisors</div>
+          <div class="credit-name">Dr. Chuan</div>
+          <div class="credit-detail">Faculty advisors at University of Miami providing guidance on concept, scope, and technical direction throughout Capstone 1 & 2.</div>
+        </div>
+      </div>
+
+      <div class="tools-section">
+        <div class="tools-label">Tools &amp; Technologies</div>
+        <div class="tools-list">
+          <span class="tool-pill">Unity 6 (URP)</span>
+          <span class="tool-pill">Meta All-In-One SDK</span>
+          <span class="tool-pill">Photon Fusion</span>
+          <span class="tool-pill">Maya</span>
+          <span class="tool-pill">Substance Painter</span>
+          <span class="tool-pill">Figma</span>
+          <span class="tool-pill">Google Gemini (concept visuals)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Convio</div>
+    <div class="footer-note">
+      Capstone Project <span class="footer-dot"></span> University of Miami <span class="footer-dot"></span> 2025
+    </div>
+    <a href="https://convio.com" target="_blank" class="footer-link">
+      Process Journal →
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
